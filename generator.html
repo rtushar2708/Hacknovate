@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificate Generator</title>
+    <link rel="stylesheet" href="CSS/generator.css">
+    
+</head>
+
+<body>
+    <div class="certificate-container">
+        <div class="certificate">
+            <h1>Certificate of Achievement</h1>
+            <form id="certificateForm">
+                <div class="form-group">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="organization">Organization Name:</label>
+                    <input type="text" id="organization" name="organization" placeholder="Enter organization name"
+                        required>
+                </div>
+                <div class="form-group">
+                    <label for="reason">Reason for Certificate:</label>
+                    <input type="text" id="reason" name="reason" placeholder="Enter reason for certificate" required>
+                </div>
+                <button type="submit">Generate Certificate</button>
+            </form>
+            <div id="certificateDetails" class="hidden">
+                <h2 class="organization-name"></h2>
+                <p class="name"></p>
+                <p class="reason"></p>
+                <div class="qr-code">
+                    <!-- QR code will be generated here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="JS/generator.js"></script>
+</body>
+
+</html>
